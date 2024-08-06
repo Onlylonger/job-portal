@@ -1,5 +1,7 @@
 import { createRouter, createWebHashHistory } from 'vue-router'
 import HomeView from '../views/HomeView.vue'
+import ProductView from '../views/AboutView.vue'
+import AboutView from '../views/ProductView.vue'
 
 const router = createRouter({
   history: createWebHashHistory(import.meta.env.BASE_URL),
@@ -13,12 +15,12 @@ const router = createRouter({
     {
       path: '/about',
       name: 'about',
-      component: () => import('../views/AboutView.vue')
+      component: AboutView
     },
     {
       path: '/service',
       name: 'service',
-      component: () => import('../views/ProductView.vue')
+      component: ProductView
     },
     {
       path: '/company',
@@ -27,12 +29,18 @@ const router = createRouter({
       children: [
         {
           path: '',
+          name: 'company-first',
           component: () => import('../views/CompanyFirstView.vue')
         },
         {
           path: 'login',
           name: 'company-login',
           component: () => import('../views/CompanyLoginView.vue')
+        },
+        {
+          path: 'index',
+          name: 'company-index',
+          component: () => import('../views/CompanyIndexView.vue')
         }
       ]
     },
@@ -43,12 +51,18 @@ const router = createRouter({
       children: [
         {
           path: '',
+          name: 'hr-first',
           component: () => import('../views/HRFirstView.vue')
         },
         {
           path: 'login',
           name: 'hr-login',
           component: () => import('../views/HRLoginView.vue')
+        },
+        {
+          path: 'index',
+          name: 'hr-index',
+          component: () => import('../views/HRIndexView.vue')
         }
       ]
     }
