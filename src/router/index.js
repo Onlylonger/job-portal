@@ -1,9 +1,11 @@
 import { createRouter, createWebHistory } from 'vue-router'
 import HomeView from '../views/HomeView.vue'
+import ProductView from '../views/ProductView.vue'
+import AboutView from '../views/AboutView.vue'
+import { COMPANY_DASHBOARD, COMPANY_OFFICERS, COMPANY_SETTLE } from '@/constants'
 
 const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
-  linkActiveClass: 'text-cyan-600',
   routes: [
     {
       path: '/',
@@ -13,12 +15,12 @@ const router = createRouter({
     {
       path: '/about',
       name: 'about',
-      component: () => import('../views/AboutView.vue')
+      component: AboutView
     },
     {
       path: '/service',
       name: 'service',
-      component: () => import('../views/ProductView.vue')
+      component: ProductView
     },
     {
       path: '/company',
@@ -27,12 +29,28 @@ const router = createRouter({
       children: [
         {
           path: '',
+          name: 'company-first',
           component: () => import('../views/CompanyFirstView.vue')
         },
         {
           path: 'login',
           name: 'company-login',
           component: () => import('../views/CompanyLoginView.vue')
+        },
+        {
+          path: 'dashboard',
+          name: COMPANY_DASHBOARD,
+          component: () => import('../views/CompanyDashboardView.vue')
+        },
+        {
+          path: 'settle',
+          name: COMPANY_SETTLE,
+          component: () => import('../views/CompanySettleView.vue')
+        },
+        {
+          path: 'officers',
+          name: COMPANY_OFFICERS,
+          component: () => import('../views/CompanyOfficersView.vue')
         }
       ]
     },
@@ -43,12 +61,18 @@ const router = createRouter({
       children: [
         {
           path: '',
+          name: 'hr-first',
           component: () => import('../views/HRFirstView.vue')
         },
         {
           path: 'login',
           name: 'hr-login',
           component: () => import('../views/HRLoginView.vue')
+        },
+        {
+          path: 'dashboard',
+          name: 'hr-dashboard',
+          component: () => import('../views/HRDashboardView.vue')
         }
       ]
     }
