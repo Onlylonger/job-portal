@@ -5,7 +5,7 @@ import vue from '@vitejs/plugin-vue'
 
 // https://vitejs.dev/config/
 export default defineConfig({
-  publicDir: 'https://onlylonger.github.io/job-portal/',
+  base: '/job-portal/',
   build: {
     outDir: 'docs'
   },
