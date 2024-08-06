@@ -1,1 +1,0 @@
-import{c as a,a as o,f as t,b as e,o as s,F as c}from"./index-DY0qhz6w.js";const n=e("div",{class:"h-[700px] bg-gray-100 pt-20"},[e("section",{class:"mx-auto h-[550px] w-[1200px] bg-white shadow-slate-900"},[e("button",null,"login")])],-1),i={__name:"CompanyLoginView",setup(r){return(l,p)=>(s(),a(t,null,[n,o(c)],64))}};export{i as default};

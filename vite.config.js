@@ -6,9 +6,6 @@ import vue from '@vitejs/plugin-vue'
 // https://vitejs.dev/config/
 export default defineConfig({
   base: '/job-portal/',
-  build: {
-    outDir: 'docs'
-  },
   plugins: [vue()],
   resolve: {
     alias: {

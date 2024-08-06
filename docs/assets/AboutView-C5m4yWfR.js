@@ -1,1 +1,0 @@
-import{c as e,a as o,b as s,o as t,F as c}from"./index-DY0qhz6w.js";const a=s("section",{class:"h-[303px] bg-gray-400"},"1",-1),n=s("section",{class:"h-[452px]"},"1",-1),_=s("section",{class:"h-[452px] bg-gray-400"},"1",-1),r=s("section",{class:"h-[542px]"},"1",-1),d={__name:"AboutView",setup(i){return(l,p)=>(t(),e("main",null,[a,n,_,r,o(c)]))}};export{d as default};
