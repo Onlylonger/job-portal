@@ -12,7 +12,7 @@ if (!getToken()) {
   })
 } else {
   router.push({
-    name: 'hr-index'
+    name: 'hr-dashboard'
   })
 }
 </script>

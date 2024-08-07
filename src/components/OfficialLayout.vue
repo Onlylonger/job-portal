@@ -1,10 +1,12 @@
 <script setup>
 import FooterBlock from '@/components/FooterBlock.vue'
+import NavBar from '@/components/NavBar.vue'
 </script>
 
 <template>
-  <main>
-    index
-    <FooterBlock />
+  <NavBar />
+  <main class="pt-16">
+    <slot />
   </main>
+  <FooterBlock />
 </template>

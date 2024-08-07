@@ -2,6 +2,7 @@ import { createRouter, createWebHashHistory } from 'vue-router'
 import HomeView from '../views/HomeView.vue'
 import ProductView from '../views/AboutView.vue'
 import AboutView from '../views/ProductView.vue'
+import { COMPANY_DASHBOARD, COMPANY_OFFICERS, COMPANY_SETTLE } from '@/constants'
 
 const router = createRouter({
   history: createWebHashHistory(import.meta.env.BASE_URL),
@@ -38,9 +39,19 @@ const router = createRouter({
           component: () => import('../views/CompanyLoginView.vue')
         },
         {
-          path: 'index',
-          name: 'company-index',
-          component: () => import('../views/CompanyIndexView.vue')
+          path: 'dashboard',
+          name: COMPANY_DASHBOARD,
+          component: () => import('../views/CompanyDashboardView.vue')
+        },
+        {
+          path: 'settle',
+          name: COMPANY_SETTLE,
+          component: () => import('../views/CompanySettleView.vue')
+        },
+        {
+          path: 'officers',
+          name: COMPANY_OFFICERS,
+          component: () => import('../views/CompanyOfficersView.vue')
         }
       ]
     },
@@ -60,9 +71,9 @@ const router = createRouter({
           component: () => import('../views/HRLoginView.vue')
         },
         {
-          path: 'index',
-          name: 'hr-index',
-          component: () => import('../views/HRIndexView.vue')
+          path: 'dashboard',
+          name: 'hr-dashboard',
+          component: () => import('../views/HRDashboardView.vue')
         }
       ]
     }

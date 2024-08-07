@@ -1,6 +1,7 @@
 <script setup>
 import { useRouter } from 'vue-router'
 import { getToken } from '@/utils'
+import { COMPANY_DASHBOARD } from '@/constants'
 
 const router = useRouter()
 console.log(getToken())
@@ -11,7 +12,7 @@ if (!getToken()) {
   })
 } else {
   router.push({
-    name: 'company-index'
+    name: COMPANY_DASHBOARD
   })
 }
 </script>
