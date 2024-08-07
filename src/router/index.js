@@ -6,7 +6,6 @@ import { COMPANY_DASHBOARD, COMPANY_OFFICERS, COMPANY_SETTLE } from '@/constants
 
 const router = createRouter({
   history: createWebHashHistory(import.meta.env.BASE_URL),
-  linkActiveClass: 'text-cyan-600',
   routes: [
     {
       path: '/',

@@ -59,7 +59,7 @@ const handleCommand = (command) => {
       <!-- <img class="shrink-0" src="./assets/logo.png" alt="logo" width="50" height="50" /> -->
       <div class="h-[50px] w-[50px] shrink-0 rounded-full bg-gray-400" width="50" height="50"></div>
       <nav class="ml-20 flex flex-1 gap-4">
-        <RouterLink to="/" class="text-cyan-600hover:text-cyan-600">首页</RouterLink>
+        <RouterLink to="/" class="hover:text-cyan-600">首页</RouterLink>
         <RouterLink to="/service" class="hover:text-cyan-600">产品功能</RouterLink>
         <RouterLink to="/about" class="hover:text-cyan-600">关于我们</RouterLink>
       </nav>
