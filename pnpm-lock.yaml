@@ -23,6 +23,9 @@ importers:
       vue:
         specifier: ^3.4.29
         version: 3.4.35
+      vue-intersect-directive:
+        specifier: ^1.1.1
+        version: 1.1.1
       vue-router:
         specifier: ^4.3.3
         version: 4.4.2(vue@3.4.35)
@@ -1450,6 +1453,9 @@ packages:
     peerDependencies:
       eslint: '>=6.0.0'
 
+  vue-intersect-directive@1.1.1:
+    resolution: {integrity: sha512-/+uXm8wb7v5notY5SI1mCfdPmV8Aoe8shzDUcx2Aaz2hnf+s1QFdj33CWUnIpnEEwG4tu5mUQemlZK1Xa+4PTw==}
+
   vue-router@4.4.2:
     resolution: {integrity: sha512-1qNybkn2L7QsLzaXs8nvlQmRKp8XF8DCxZys/Jr1JpQcHsKUxTKzTxCVA1G7NfBfwRIBgCJPoujOG5lHCCNUxw==}
     peerDependencies:
@@ -2778,6 +2784,8 @@ snapshots:
       semver: 7.6.3
     transitivePeerDependencies:
       - supports-color
+
+  vue-intersect-directive@1.1.1: {}
 
   vue-router@4.4.2(vue@3.4.35):
     dependencies:

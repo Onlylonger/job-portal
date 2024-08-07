@@ -54,7 +54,7 @@ const handleCommand = (command) => {
 </script>
 
 <template>
-  <header class="fixed w-full border-x-slate-900 bg-white">
+  <header class="fixed z-50 w-full border-x-slate-900 bg-white">
     <div :class="navContainerVar({ type: props.type })">
       <!-- <img class="shrink-0" src="./assets/logo.png" alt="logo" width="50" height="50" /> -->
       <div class="h-[50px] w-[50px] shrink-0 rounded-full bg-gray-400" width="50" height="50"></div>
