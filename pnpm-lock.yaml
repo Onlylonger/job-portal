@@ -14,6 +14,9 @@ importers:
       class-variance-authority:
         specifier: ^0.7.0
         version: 0.7.0
+      classnames:
+        specifier: ^2.5.1
+        version: 2.5.1
       element-plus:
         specifier: ^2.7.8
         version: 2.7.8(vue@3.4.35)
@@ -23,9 +26,6 @@ importers:
       vue:
         specifier: ^3.4.29
         version: 3.4.35
-      vue-intersect-directive:
-        specifier: ^1.1.1
-        version: 1.1.1
       vue-router:
         specifier: ^4.3.3
         version: 4.4.2(vue@3.4.35)
@@ -599,6 +599,9 @@ packages:
 
   class-variance-authority@0.7.0:
     resolution: {integrity: sha512-jFI8IQw4hczaL4ALINxqLEXQbWcNjoSkloa4IaufXCJr6QawJyw7tuRysRsrE8w2p/4gGaxKIt/hX3qz/IbD1A==}
+
+  classnames@2.5.1:
+    resolution: {integrity: sha512-saHYOzhIQs6wy2sVxTM6bUDsQO4F50V9RQ22qBpEdCW+I+/Wmke2HOl6lS6dTpdxVhb88/I6+Hs+438c3lfUow==}
 
   clsx@2.0.0:
     resolution: {integrity: sha512-rQ1+kcj+ttHG0MKVGBUXwayCCF1oh39BF5COIpRzuCEv8Mwjv0XucrI2ExNTOn9IlLifGClWQcU9BrZORvtw6Q==}
@@ -1453,9 +1456,6 @@ packages:
     peerDependencies:
       eslint: '>=6.0.0'
 
-  vue-intersect-directive@1.1.1:
-    resolution: {integrity: sha512-/+uXm8wb7v5notY5SI1mCfdPmV8Aoe8shzDUcx2Aaz2hnf+s1QFdj33CWUnIpnEEwG4tu5mUQemlZK1Xa+4PTw==}
-
   vue-router@4.4.2:
     resolution: {integrity: sha512-1qNybkn2L7QsLzaXs8nvlQmRKp8XF8DCxZys/Jr1JpQcHsKUxTKzTxCVA1G7NfBfwRIBgCJPoujOG5lHCCNUxw==}
     peerDependencies:
@@ -1952,6 +1952,8 @@ snapshots:
   class-variance-authority@0.7.0:
     dependencies:
       clsx: 2.0.0
+
+  classnames@2.5.1: {}
 
   clsx@2.0.0: {}
 
@@ -2784,8 +2786,6 @@ snapshots:
       semver: 7.6.3
     transitivePeerDependencies:
       - supports-color
-
-  vue-intersect-directive@1.1.1: {}
 
   vue-router@4.4.2(vue@3.4.35):
     dependencies:
