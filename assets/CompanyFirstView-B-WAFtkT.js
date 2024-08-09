@@ -1,0 +1,1 @@
+import{a as s,C as r}from"./index-BkNxbCHU.js";import{g as o}from"./index-BhkyE58R.js";const u={__name:"CompanyFirstView",setup(t){const e=s();return console.log(o()),o()?e.push({name:r}):e.push({name:"company-login"}),(a,n)=>"?"}};export{u as default};

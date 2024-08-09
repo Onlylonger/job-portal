@@ -1,0 +1,1 @@
+import{_ as e}from"./AdminLayout-C7ygWJXc.js";import{c as t,w as a,o,d as r}from"./index-BkNxbCHU.js";const p={__name:"CompanySettleView",setup(_){return(c,s)=>(o(),t(e,null,{default:a(()=>[r(" CompanySettleView ")]),_:1}))}};export{p as default};

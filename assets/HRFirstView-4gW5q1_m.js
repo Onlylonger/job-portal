@@ -1,0 +1,1 @@
+import{a as o}from"./index-BkNxbCHU.js";import{g as r}from"./index-BhkyE58R.js";const m={__name:"HRFirstView",setup(s){const e=o();return console.log(r()),r()?e.push({name:"hr-dashboard"}):e.push({name:"hr-login"}),(t,a)=>"?"}};export{m as default};
