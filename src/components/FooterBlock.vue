@@ -3,7 +3,7 @@
 <template>
   <section class="h-[289px] bg-neutral-900">
     <div class="mx-auto flex w-[1200px] py-12">
-      <div class="w-1/2">
+      <div class="w-1/2" v-in="'duration-1000 animate-in slide-in-from-bottom-full'">
         <p class="text-lg text-white">产品功能</p>
         <div class="mt-8 flex">
           <a href="#" class="w-1/2 text-sm text-neutral-400 hover:text-neutral-300">组织架构</a>
