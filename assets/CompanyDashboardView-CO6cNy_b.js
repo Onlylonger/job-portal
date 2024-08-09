@@ -1,0 +1,1 @@
+import{_ as a}from"./AdminLayout-DeLL6w7L.js";import{c as e,w as o,o as t,d as r}from"./index-DvTpreQK.js";const p={__name:"CompanyDashboardView",setup(s){return(_,c)=>(t(),e(a,null,{default:o(()=>[r(" CompanyDashboardView ")]),_:1}))}};export{p as default};

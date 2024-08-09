@@ -1,0 +1,1 @@
+import{_ as e}from"./AdminLayout-DeLL6w7L.js";import{c as a,w as t,o,d as r}from"./index-DvTpreQK.js";const i={__name:"CompanyOfficersView",setup(c){return(s,_)=>(o(),a(e,null,{default:t(()=>[r(" CompanyOfficersView ")]),_:1}))}};export{i as default};
